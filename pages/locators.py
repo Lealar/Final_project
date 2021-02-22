@@ -11,7 +11,7 @@ class RegisterPageLocators():
 
 class ADDTOBASKET():
     BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
-    MSG_BOOK_IN_BASKET = (By.CSS_SELECTOR, ".alertinner")
-    NAME_BOOK_ON_PAGE = (By.CSS_SELECTOR, ".product_main h1")
+    MSG_BOOK_IN_BASKET = (By.CSS_SELECTOR, ".alertinner > strong")
+    NAME_BOOK_ON_PAGE = (By.CSS_SELECTOR, ".product_main > h1")
     PRICE_BOOK = (By.CSS_SELECTOR, "p.price_color")
     PRICE_BASKET = (By.CSS_SELECTOR, ".alert-info .alertinner strong")

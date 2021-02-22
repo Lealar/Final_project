@@ -11,7 +11,7 @@ class ProductPage(BasePage):
         assert self.is_element_present(*ADDTOBASKET.NAME_BOOK_ON_PAGE), "Message about adding is not presented"
         first_message = self.browser.find_element(*ADDTOBASKET.MSG_BOOK_IN_BASKET).text
         name_book = self.browser.find_element(*ADDTOBASKET.NAME_BOOK_ON_PAGE).text
-        assert name_book in first_message, f"Название книг не совпадает {name_book}, {first_message}"
+        assert name_book == first_message, f"Название книг не совпадает {name_book}, {first_message}"
 
     def price_basket_and_book(self):
         assert self.is_element_present(*ADDTOBASKET.PRICE_BASKET), "Message basket total is not presented"
