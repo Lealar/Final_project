@@ -15,3 +15,4 @@ class ADDTOBASKET():
     NAME_BOOK_ON_PAGE = (By.CSS_SELECTOR, ".product_main > h1")
     PRICE_BOOK = (By.CSS_SELECTOR, "p.price_color")
     PRICE_BASKET = (By.CSS_SELECTOR, ".alert-info .alertinner strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert-success")
